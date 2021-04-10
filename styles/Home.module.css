@@ -1,0 +1,93 @@
+.body {
+  background-color: #111;
+}
+
+.background {
+  background-image: url('../public/us.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: sticky;
+  top: 0;
+}
+
+.backgroundGTTC {
+  background-image: url('../public/gttc.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: sticky;
+  top: 0;
+}
+
+.artistName {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.nav {
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  z-index: 1;
+}
+
+.navLinks {
+  display: flex;
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
+
+.navLink {
+  padding-left: 1rem;
+}
+
+.main {
+  padding: 0 2rem 40vh;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: -30vh;
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.mainGTTC {
+  padding: 0 0 40vh;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-top: -30vh;
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
+  opacity: 0.9;
+}
+
+.albumDescription {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLinks {
+    margin-top: 0;
+  }
+
+  .bio,
+  .albumDescription {
+    max-width: 50%;
+  }
+}
